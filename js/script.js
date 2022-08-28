@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded' , event => {
         .then(response => response.json())
         .then(fetch => {
             fetch.forEach(fetch => {
-                div_fetch.innerHTML += `<input type="checkbox" value="${fetch.id} id="${fetch.id}" ${ fetch.completed ? "checked" : ''} />
+                div_fetch.innerHTML += `<input type="checkbox" value="${fetch.id}" id="${fetch.id}" ${ fetch.completed ? "checked" : ''} />
                 <label for="${fetch.id}">${fetch.title}</label><br>`
             });
             getSelected()
